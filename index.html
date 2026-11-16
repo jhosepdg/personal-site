@@ -10,6 +10,17 @@
   <link rel="preload" href="assets/fonts/space-grotesk-bold.ttf" as="font" type="font/ttf" crossorigin>
   <link rel="stylesheet" href="styles.css">
   <script src="script.js" defer></script>
+  <style>
+    .hero-overview{grid-column:2;grid-row:2;min-width:0;align-self:center}
+    .hero-content .hero-overview h1{font-size:clamp(24px,2.35vw,38px);line-height:1.2;letter-spacing:-.035em;pointer-events:auto}
+    .hero-actions{display:flex;align-items:center;gap:20px;flex-wrap:wrap;margin-block:26px}
+    .hero-actions .scroll-link{display:flex}
+    .hero-overview .metrics{margin:0;gap:18px}
+    .hero-overview .metrics>div{padding-left:12px}
+    .hero-overview .metrics strong{font-size:clamp(34px,3.5vw,56px)}
+    @media(max-width:1100px){.hero-overview .metrics{grid-template-columns:repeat(2,minmax(0,1fr))}}
+    @media(max-width:700px){.hero-overview{grid-column:1;grid-row:3}.hero-actions{gap:16px}.hero-overview .metrics p{font-size:12px}}
+  </style>
 </head>
 <body>
   <a class="skip-link" href="#main">Skip to content</a>
@@ -30,14 +41,13 @@
           <img src="assets/jhosep-delgado.jpg" alt="Pepe Delgado smiling, wearing a suit with his arms crossed" width="1254" height="1254" fetchpriority="high">
           <figcaption class="portrait-caption mono"><span>Embrace education with curiosity<br><span class="muted">through new ways of thinking and doing.</span></span><span class="orange" aria-hidden="true">↗</span></figcaption>
         </figure>
-        <h1 id="hero-title">SOLVE<br>PROBLEMS<br>DIFFERENTLY.<br><span class="orange">MAKE THEM<br>IMPACTFUL.</span></h1>
+        <div class="hero-overview">
+          <h1 id="hero-title">I connect analytical thinking, emerging technologies, learning sciences, and a humanistic worldview to design around people’s goals and the barriers they face to access educational opportunities.</h1>
+          <div class="hero-actions"><a class="button" href="#about">Explore my perspective <span aria-hidden="true">↘</span></a><a class="scroll-link mono" href="#about">Scroll to discover <span aria-hidden="true">↓</span></a></div>
+          <div class="metrics"><div><strong>14<span>+</span></strong><p>Years in international<br>education consulting</p></div><div><strong>300<span>+</span></strong><p>Cases connecting ambition with global opportunity</p></div><div><strong>20<span>+</span></strong><p>Institutional partners</p></div><div><strong>4<span>+</span></strong><p>Edu Ventures</p></div></div>
+        </div>
       </div>
-      <div class="hero-bottom"><p>I connect analytical thinking, emerging technologies, learning sciences, and a humanistic worldview to design around people’s goals and the barriers they face to access educational opportunities.</p><a class="button" href="#about">Explore my perspective <span aria-hidden="true">↘</span></a><a class="scroll-link mono" href="#about">Scroll to discover <span aria-hidden="true">↓</span></a></div>
     </section>
-
-    <div class="hero-metrics">
-      <div class="metrics"><div><strong>14<span>+</span></strong><p>Years in international<br>education consulting</p></div><div><strong>300<span>+</span></strong><p>Cases connecting ambition with global opportunity</p></div><div><strong>20<span>+</span></strong><p>Institutional partners</p></div><div><strong>4<span>+</span></strong><p>Edu Ventures</p></div></div>
-    </div>
 
      <div class="discipline-strip mono" aria-label="Areas of focus"><span>Analytical thinking</span><i>✳</i><span>Human-centered innovation</span><i>✳</i><span>Global perspective</span><i>✳</i><span>Purposeful execution</span></div>
     
